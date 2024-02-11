@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    background-image: url('rose.jpg');
+    background-size: cover;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.valentine-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 200px;
+    background-color: #e55c5c;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.valentine-card .content {
+    text-align: center;
+}
+
+.valentine-card .content h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+.valentine-card .content p {
+    color: #fff;
+    font-size: 16px;
+}
+@media only screen and (max-width: 600px) {
+    .valentine-card {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        padding: 20px;
+    }
+}
